@@ -1,13 +1,13 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255);
+  createCanvas(700,700);
+  background(0);
 }
 
 function draw() {
   fill(255,0,0);                                          //setting fill for circles
   noStroke();
   let baseDim = 20;                                       //defining minimum diameter of circles
-  randomSeed(3);
+  randomSeed(500);
   for(let i=0;i<=width;i+=baseDim*4)                      //generate circles along x-axis
   {
     for(let j=0;j<=width;j+=baseDim*4)                    //generate circles along y-axis
