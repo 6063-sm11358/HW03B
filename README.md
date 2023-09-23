@@ -2,7 +2,7 @@
 
 For this exercise, I've utilized a square canvas of size 700px, with a black background for better legibility.
 
-Since we need to implement 3 different sizes of circles, I've used a variable *baseDim* to set a minimum diameter value for the circles. I'll be using the *random()* function to multiple this value to generate the different diameters.
+Since we need to implement 3 different sizes of circles, I've used a variable *baseDim* to set a minimum diameter value for the circles. I'll be using the *random()* function to multiply this value to generate the different diameters.
 
 The *randomSeed(500)* is used for generatig pseudo-random values so that the circle positions don't keep shifting with every frame. No specific reason behind choosing 500 as the seed value.
 
@@ -24,9 +24,9 @@ In the above code snippet, I'm using 2 *for* loops for generating circles in a g
 
 1. *random([1,2,3])* is being passed an array, and generates discrete values i.e. 1,2,3 only .. no floating-point values
 
-2. Since I'm multiplying *baseDim* with either 1,2,3 for getting different diameter sizes, that's why I'm incrementing *i* by *(baseDim x 4)*, so that it circles don't overlap each other. This ensures that even the biggest of circles can be besides each other without touching each other
+2. Since I'm multiplying *baseDim* with either 1,2,3 for getting different diameter sizes, that's why I'm incrementing *i* by *(baseDim x 4)*, so that the circles don't overlap each other. This ensures that even the biggest of circles can be besides each other without touching each other
 
-3. To jiggle the circles' positions, I'm shifting the *xpos* and *ypos* values by upto 20px using *random()* in lines 14 & 15. *int(random(20))* results in a randomly generated **integer**, and not a decimal (float) value
+3. To jiggle the circles' positions, I'm shifting the *xpos* and *ypos* values by upto 20px using *random()* in lines 14 & 15. *int(random(20))* results in a randomly generated ***integer***, and not a decimal (float) value
 
 4. The result contains all three properties:
     - Multiple sizes of ellipses (3 different diameters)
